@@ -1,11 +1,12 @@
 import 'package:example_of_login/firebase/home.dart';
+import 'package:example_of_login/screen/stremExample.dart';
 import 'package:flutter/material.dart';
 
 
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: Home(),
+    home: StreamExample(),
   ));
 }
 
