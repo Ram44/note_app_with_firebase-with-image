@@ -1,12 +1,16 @@
-import 'package:example_of_login/firebase/home.dart';
-import 'package:example_of_login/screen/stremExample.dart';
+//import 'package:example_of_login/firebase/home.dart';
+import 'package:example_of_login/screen/auto_update_list.dart';
+import 'package:firebase_core/firebase_core.dart';
+//import 'package:example_of_login/screen/stremExample.dart';
 import 'package:flutter/material.dart';
 
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+await Firebase.initializeApp();
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: StreamExample(),
+    home: AutoUpdateList(),
   ));
 }
 

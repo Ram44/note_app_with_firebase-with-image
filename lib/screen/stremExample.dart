@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 
 class StreamExample extends StatefulWidget {
@@ -12,7 +11,7 @@ class _StreamExampleState extends State<StreamExample> {
   StreamController<String> streamController = StreamController();
   @override
   void initState() {
-   // _listen();
+  //  _listen();
     super.initState();
   }
 
