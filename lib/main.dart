@@ -4,14 +4,15 @@ import 'package:example_of_login/NodedDemo/nodedemo.dart';
 import 'package:firebase_core/firebase_core.dart';
 //import 'package:example_of_login/screen/stremExample.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 await Firebase.initializeApp();
-  runApp(MaterialApp(
+  runApp(GetMaterialApp(
     debugShowCheckedModeBanner: false,
-    home: NodeDemo()
+    home:NoteDemo()
   ));
 }
 
